@@ -1,4 +1,3 @@
 #!/bin/bash
-adduser testuser4
-
-tail -1 /etc/passwd
+gpasswd -a testuser4 mygroup
+grep "mygroup" /etc/group
